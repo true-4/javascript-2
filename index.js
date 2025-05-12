@@ -563,9 +563,9 @@ for (const key in user) {
 }
 
 // 2.5
-const colors = ["red", "green", "blue"]
+const color1 = ["red", "green", "blue"]
 
-for (const element of colors) {
+for (const element of color1) {
   console.log(element)
 }
 
@@ -590,3 +590,115 @@ for (const element of products) {
 
 // 4
 // 4.1
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+const userCase = [
+  {
+    name: "Alex",
+    age: 20,
+    isStudent: true,
+  },
+  {
+    name: "Egor",
+    age: 30,
+    isStudent: false,
+  },
+]
+const goods = ["Phone", "Laptop", "Headphones"]
+const kitchen = ["kitchen stove", "kitchen sink", "refrigerator"]
+const tours = [
+  {
+    city: "Male",
+    price: `2000 $`,
+  },
+  {
+    city: "Phuket",
+    price: `1800 $`,
+  }
+]
+const phoneNumber = ["+1234567890", "+0987654321"]
+const colors = ["red", "green", "blue", "red", "green"]
+const animals = ["dog", "cat", "elephant", "tiger", "lion"]
+const fruits = ["apple", "banana", "orange", "grape", "kiwi"]
+const hobbies = ["reading", "traveling", "cooking", "gaming", "photography"]
+
+//4.2
+for (let i = 0; i < numbers.length; i++) {
+  console.log(numbers[i])
+}
+
+let sumNum = 0
+for (let i = 0; i < numbers.length; i++) {
+  sumNum = numbers[i] + sumNum
+}
+console.log(sumNum)
+
+let count = 0
+for (let i = 0; i < kitchen.length; i++) {
+  count++
+}
+console.log(count)
+
+//4.3
+let i = numbers.length - 1
+while (i >= 0) {
+  console.log(numbers[i])
+  i--
+}
+
+// 4.4
+let userName
+do {
+  userName = prompt("Введите имя:")
+} while (userName !== "Стоп")
+
+// TO DOO
+// 4.5
+// 4.6
+
+// 5
+// 5.1
+// Что произойдёт при таком коде?
+// for (let i = 0; i < 3; i++) {
+//   console.log(i);  
+//   i++;
+// }
+// должно вывести 0 1 2
+// НО у меня почему то выводит 0 2
+
+// 5.2
+// let i = 0;
+// while (i < 5) {
+//   if (i === 3) break; 
+//   console.log(i);
+//   i++;
+// }
+//  выводит 0 1 2 3 и происходит принудительная остановка из-зи break
+// тут снова ошибся так как break останавливает и вывод 3 выводит 0 1 2
+
+// 5.3
+for (let i = 0; i < 10; i++) {
+  if (i % 2 == 0) continue// пошел читать learnjs и там сразу решение :)
+  console.log("continue: ", i)
+}
+
+// 5.4
+// const obj = { a: 1, b: 2, c: 3 };
+// for (const key in obj) {
+//   console.log(key);
+// }
+// выводит индексы "ключи" a b c
+
+// 5.5
+// const arr = [10, 20, 30];
+// for (const value in arr) {
+//   console.log(value);
+// }
+// выводит 0 1 2 это ключи значений массива по умолчанию
+
+// 5.6
+// const arr32 = [10, 20, 30];
+// for (const value of arr32) {
+//   console.log(value);
+// }
+// выводит 10 20 30 of обращается к значениям, а не к ключам
+
