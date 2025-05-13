@@ -702,3 +702,38 @@ for (let i = 0; i < 10; i++) {
 // }
 // выводит 10 20 30 of обращается к значениям, а не к ключам
 
+// 6
+// 6.1
+for (let i = 1; i <= 10; i++) {
+  console.log(i * 2)
+}
+
+// 6.2
+let multiplicationTable = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+for (let i = 1; i <= multiplicationTable.length; i++) {
+  for (let k = 1; k <= 9; k++) {
+    console.log(i * k)
+  }
+}
+
+// 6.3
+let sumNum2 = 0
+for (let i = 1; i <= 100; i++) {
+  sumNum2 = i + sumNum2
+}
+console.log(sumNum2)
+
+// 6.4
+let factorial = 1
+let countFactorial = 1
+while (countFactorial <= 5) {
+  factorial = factorial * countFactorial
+  countFactorial++
+}
+console.log(factorial)
+
+// 6.5
+let sayHi = "hello"
+for (let el of sayHi) {
+  console.log(el.toUpperCase())
+}
